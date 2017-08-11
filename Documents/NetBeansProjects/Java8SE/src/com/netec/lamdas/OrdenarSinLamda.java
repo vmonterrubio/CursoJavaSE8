@@ -35,9 +35,13 @@ public class OrdenarSinLamda {
          Collections.sort(clientes, (Persona p1, Persona p2) -> p1.nombre.compareTo(p2.nombre));
        
         
-        for (Persona cliente : clientes) {
+//        for (Persona cliente : clientes) {
+//            System.out.println(cliente);
+//        }
+        clientes.forEach((cliente) -> {
             System.out.println(cliente);
-        }
+        });
+
     }
         
     }
